@@ -1,0 +1,45 @@
+/* 画面全体 */
+body {
+    width: 800px;
+    margin: auto;
+    font-family: sans-serif;
+    background-color: green;
+}
+
+/* タイトル */
+h1 {
+    text-align: center;
+}
+
+/* 入力欄 */
+select, input, textarea {
+    padding: 10px;
+    margin: 5px;
+}
+
+/* ファイル表示 */
+#fileView {
+    width: 700px;
+    height: 550px;
+    background-color: white;
+}
+
+/* コメント入力 */
+#comment {
+    width: 700px;
+    height: 120px;
+}
+
+/* ボタン */
+button {
+    padding: 10px 20px;
+    background-color: lightgray;
+    border: 1px solid gray;
+}
+
+/* コメント一覧 */
+.commentBox {
+    padding: 10px;
+    margin: 10px 0;
+    background-color: white;
+}
