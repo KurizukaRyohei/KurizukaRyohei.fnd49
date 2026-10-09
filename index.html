@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>災害事例共有</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- メイン画面 -->
+    <div id="casePage">
+
+        <h1>災害事例を自分事と捉えて考えよう！</h1>
+
+        <h3>災害事例選択</h3>
+
+        <select id="caseSelect">
+            <option value="">選択してください</option>
+        </select>
+
+        <br>
+
+        <!-- 選択したファイルを表示 -->
+        <object id="fileView"></object>
+
+        <hr>
+
+        <h3>
+            この災害事例からの学びや<br>
+            あなたの作業で同じような経験があれば記入して下さい
+        </h3>
+
+        <!-- 名前 -->
+        <select id="name">
+            <option value="">名前を選択して下さい</option>
+            <option value="Aさん">Aさん</option>
+            <option value="Bさん">Bさん</option>
+            <option value="Cさん">Cさん</option>
+        </select>
+
+        <br>
+
+        <!-- コメント -->
+        <textarea id="comment" placeholder="コメント入力"></textarea>
+
+        <br>
+
+        <button id="postButton">登録する</button>
+
+        <hr>
+
+        <button id="bossButton">上司確認画面</button>
+
+    </div>
+
+
+    <!-- 上司画面 -->
+    <div id="bossPage">
+
+        <h1>上司画面</h1>
+
+        <h2>コメント一覧</h2>
+        <div id="commentList"></div>
+
+        <hr>
+
+        <h2>ファイルを追加</h2>
+
+        <input type="text" id="newTitle" placeholder="例：災害事例 No001">
+        <input type="file" id="newFile">
+
+        <br>
+
+        <button id="addFileButton">ファイルを追加</button>
+
+        <hr>
+
+        <button id="backButton">メイン画面に戻る</button>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
